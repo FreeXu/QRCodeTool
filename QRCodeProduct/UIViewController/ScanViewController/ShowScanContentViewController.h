@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ShowScanContentViewController.h
 //  QRCodeProduct
 //
 //  Created by 一卡易 on 15/11/4.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ShowScanContentViewController : UIViewController
 
+@property (nonatomic, copy) NSString *contentString;
 
 @end
-
