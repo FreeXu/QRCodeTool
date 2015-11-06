@@ -4,7 +4,7 @@
 
  从iOS7开始，苹果增加的扫码API，可以利用苹果自带的方法，完成扫码功能；初始化扫码代码如下：
  
- //初始化
+    //初始化
     NSError *error;
     AVCaptureDevice *currentDevice = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
     AVCaptureDeviceInput *deviceInput = [AVCaptureDeviceInput deviceInputWithDevice:currentDevice error:&error];
@@ -35,9 +35,9 @@
         
         //开始捕获
         [_captureSession startRunning];
-        }
+      }
         
-        将上面的初始化封装，在- (void)viewWillAppear:(BOOL)animated中调用
+将上面的初始化封装，在- (void)viewWillAppear:(BOOL)animated中调用
 
 
 2.生成二维码
